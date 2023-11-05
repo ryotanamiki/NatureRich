@@ -1,0 +1,246 @@
+@charset "utf-8";
+
+html *,
+::before,
+::after {
+	box-sizing: border-box;
+}
+
+/* フォント */
+html {
+	font-size: 16px;
+	color: #3b3b3b;
+}
+
+@media (min-width: 768px) {
+	html {
+		font-size: 16px;
+	}
+}
+
+body {
+	font-family: 'Noto Sans JP', sans-serif;
+	font-weight: 400;
+	/* Noto Sans JPのレギュラーウェイトを指定 */
+	background-color: beige;
+}
+
+/* おもな太字タグのフォントウェイト設定 */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+th,
+strong {
+	font-weight: 700;
+}
+
+/* レスポンシブイメージと画像下スペース防止 */
+img {
+	max-width: 100%;
+	height: auto;
+	vertical-align: bottom;
+	/* 画像下のスペースを消す */
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+
+/* ヘッダー部 */
+
+.header-container {
+	margin-top: 3%;
+	display: flex;
+	position: relative;
+
+}
+
+.logo {
+	width: 100%;
+	text-align: center;
+}
+
+.logo img {
+	width: 30%;
+}
+
+.icon_mypage,
+.icon_search,
+.icon_cart {
+	width: 6%;
+	position: absolute;
+	bottom: 15%;
+}
+
+.icon_mypage {
+	left: 14%;
+}
+
+.icon_cart {
+	right: 3%;
+}
+
+.icon_search {
+	right: 14%;
+}
+
+nav {
+	width: 100%;
+	display: none;
+	margin: 0 auto;
+	background-color: #f5f3e7;
+	list-style: none;
+}
+
+
+nav li {
+	width: 100%;
+	padding: 0 0 0 30px;
+}
+
+nav a {
+	text-decoration: none;
+}
+
+/*  メインコンテナー  */
+.main-container {
+	padding: 10px 0;
+	background-color: #999;
+	color: white;
+}
+
+.aboutus h2 {
+	text-align: center;
+}
+
+.aboutus p {
+	width: 80%;
+	margin: auto;
+	padding: 10px 0;
+	text-align: space-between;
+}
+
+.trial {
+	width: 80%;
+	margin: 10% auto 0 auto;
+}
+
+.nikibi-line {
+	width: 80%;
+	margin: 10% auto 0 auto;
+}
+
+/*   New Arrive & Best Seller */
+.na,
+.bs {
+	margin: 5% 0;
+	justify-content: center;
+}
+
+.na h2,
+.bs h2 {
+	margin-bottom: 3%;
+}
+
+.na-items,
+.bs-items {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 5%;
+}
+
+.na-item1 :hover,
+.na-item2 :hover,
+.na-item3 :hover,
+.bs-item1 :hover,
+.bs-item2 :hover,
+.bs-item3 :hover {
+	box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+	transform: translateY(-10px);
+	transition-duration: 0.5s;
+}
+
+.na-item img,
+.bs-item img {
+	cursor: pointer;
+}
+
+.bs-item1,
+.bs-item2,
+.bs-item3 {
+	position: relative;
+}
+
+.rank1,
+.rank2,
+.rank3 {
+	width: 20%;
+	position: absolute;
+	top: 0;
+	left: 5%;
+
+}
+
+.banner img {
+	width: 100%;
+	margin: 0 auto;
+	padding-bottom: 30px;
+}
+
+/*   Footer    */
+footer {
+	background-color: #f5f3e7;
+}
+
+.sns-icon h3 {
+	color: #777;
+	padding-top: 10px;
+}
+
+.sns-icon {
+	text-align: center;
+}
+
+.icon-img {
+	width: 130px;
+	display: flex;
+	margin: 0 auto;
+}
+
+.icon-img a {
+	padding: 5px 5px 30px 5px;
+}
+
+.footer-container {
+	margin: 0 10px 0 20px;
+}
+
+.footer-nav {
+	margin-bottom: 20px;
+}
+
+.footer-nav1 h4 {
+	margin-bottom: 5px;
+}
+
+.footer-container li {
+	list-style: none;
+	font-weight: 600;
+}
+
+.footer-logo {
+	width: 15%;
+	margin: auto;
+}
+
+/* コピーライト */
+.copyright {
+	font-size: .75rem;
+	color: #999;
+	text-align: center;
+}
